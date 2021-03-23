@@ -1,0 +1,22 @@
+@import "vars"
+
+@mixin footer__content-contactsBold()
+  font-family: "Roboto", sans-serif
+  font-weight: 600
+  font-size: 14px
+  color: $MountainMeadow
+
+@mixin footer__content-contactsLight()
+  font-family: "Roboto Light", sans-serif
+  font-weight: 200
+  font-size: 14px
+  color: $solidWhite
+
+@mixin link-none()
+  color: $solidWhite
+  text-decoration: none
+
+@mixin adaptive-font($pcSize, $mobSize)
+  $addSize: $pcSize - $mobSize
+  $maxWidth: $maxWidth - 320
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}))

@@ -1,0 +1,35 @@
+@media (max-width: 850px) {
+  .header__top__inner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header__bottom-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header-logo {
+    margin-top: 15px;
+  }
+
+  .menu {
+    margin: 15px 0;
+  }
+
+  .header__cart {
+    margin-bottom: 15px;
+  }
+
+  .header__slider {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .header__slider .slick-next, .header__slider .slick-prev {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */
